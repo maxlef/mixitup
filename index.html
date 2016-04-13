@@ -19,66 +19,82 @@
   
   <!-- Navbar -->
  
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
-        </button>
-        <a class="navbar-brand" href="index.html">April Steinmetz</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-              <button type="button" class="btn btn-default navbar-btn customFilter">
-                <span class="glyphicon glyphicon-equalizer"></span> discover
-              </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
 
   <!-- Main container for the filter area -->
   
-  <div class="controls" style="display:none;">
-    
-    
-    <label>Style:</label>
-    <button class="filter glam" data-filter=".glamour">Glamour</button>
-    <button class="filter fit" data-filter=".fitness">Fitness</button>
-    <button class="filter fash" data-filter=".fashion">Fashion</button>
-    <button class="filter ling" data-filter=".lingerie">Lingerie</button>
-    
-    <label>Release:</label>
-    <button class="sort" data-sort="myorder:asc">Oldest</button>
-    <button class="sort" data-sort="myorder:desc">Newest</button>
-    
-    <label>Reset:</label>
-    <button class="filter" data-filter="all">All</button>
-    
-  </div>  
+  
+  
+  <form class="controls" id="Filters">
+  <!-- We can add an unlimited number of "filter groups" using the following format: -->
+  
+  <fieldset>
+    <h4>Shapes</h4>
+    <div class="checkbox">
+      <input type="checkbox" value=".square"/>
+      <label>Square</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".circle"/>
+      <label>Circle</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".triangle"/>
+      <label>Triangle</label>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <h4>Colours</h4>
+    <div class="checkbox">
+      <input type="checkbox" value=".white"/>
+      <label>White</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".green"/>
+      <label>Green</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".blue"/>
+      <label>Blue</label>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <h4>Sizes</h4>
+    <div class="checkbox">
+      <input type="checkbox" value=".sm"/>
+      <label>Small</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".lrg"/>
+      <label>Large</label>
+    </div>
+  </fieldset>
+  
+  <button id="Reset">Clear Filters</button>
+</form>
         
   <!-- Main container for the portfolio  -->
- 
-  <div id="Container" class="pontainer">
-    
-    <div class="mix fitness" data-myorder="1"><img src="img/fitness/fitness.jpg"></div>
-    <div class="mix glamour" data-myorder="2"><img src="img/glamour/glamour.jpg"></div>
-    <div class="mix glamour" data-myorder="3"><img src="img/glamour/glamour2.jpg"></div>
-    <div class="mix fitness" data-myorder="4"><img src="img/fitness/fitness2.jpg"></div>
-    <div class="mix fitness" data-myorder="5"><img src="img/fitness/fitness3.jpg"></div>
-    <div class="mix fashion" data-myorder="6"><img src="img/fashion/fashion.jpg"></div>
-    <div class="mix fashion" data-myorder="7"><img src="img/fashion/fashion2.jpg"></div>
-    <div class="mix fashion" data-myorder="8"><img src="img/fashion/fashion3.jpg"></div>
-    <div class="mix fashion" data-myorder="9"><img src="img/fashion/fashion4.jpg"></div>
-   
-    <div class="gap"></div>
-    <div class="gap"></div>
   
-  </div>
+  <div id="Container" class="container">
+  <div class="fail-message"><span>No items were found matching the selected filters</span></div>
+  
+  <div class="mix triangle white lrg"></div>
+  <div class="mix square white sm"></div>
+  <div class="mix circle green lrg"></div>
+  <div class="mix triangle blue lrg"></div>
+  <div class="mix square white lrg"></div>
+  <div class="mix circle blue sm"></div>
+  <div class="mix triangle green lrg"></div>
+  <div class="mix square blue lrg"></div>
+  <div class="mix circle white lrg"></div>
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
   
   <!-- Scripts for MixItUp -->
     
