@@ -18,21 +18,20 @@ body{
 }
 
 .customFilter{
-  outline: 0 none;
+  outline: none;
   border-radius: 2;
   border:none;
 }
 
-.customFilter:focus{
-  outline: 0 none;
-  border-radius: 2;
-  border:none;
-}
 .customFilter:active{
-  outline: 0 none;
+  outline: none;
   border-radius: 2;
   border:none;
   background:#E6E6E6;
+}
+
+*:focus {
+    outline: 0 !important;
 }
 
 /*********** FILTER STYLES ***********/
