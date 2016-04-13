@@ -14,7 +14,7 @@ body{
 
 /*********** NAVBAR STYLES ***********/
 .navbar{
-  background:#c5c5c5;
+  background:white;
 }
 
 .customFilter{
@@ -40,8 +40,9 @@ body{
 .controls{
   text-align:center;
   padding: 1%;
-  background: #E6E6E6; /* default was 333 
+  background: #f0f0f0; /* default was 333 
   color: #eee       */
+  border-bottom: solid 1px #E7E7E7;
 }
 
 label{
@@ -52,7 +53,7 @@ label{
 button{
   display: inline-block;
   padding: .4em .8em;
-  background: #E6E6E6;
+  background: #f0f0f0;
   border:solid 1px;
   color: #666;
   font-size: 12px;
