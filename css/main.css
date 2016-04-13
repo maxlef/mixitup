@@ -66,6 +66,7 @@ button{
 }
 .glam.active{
   background: lightgreen;
+  color:#666;
 }
 
 .fit{
@@ -73,6 +74,7 @@ button{
 }
 .fit.active{
   background: #ffff94;
+  color:#666;
 }
 
 .fash{
@@ -80,6 +82,7 @@ button{
 }
 .fash.active{
   background: pink;
+  color:#666;
 }
 
 .ling{
@@ -87,6 +90,7 @@ button{
 }
 .ling.active{
   background: lightblue;
+  color:#666;
 }
 
 button.active{
