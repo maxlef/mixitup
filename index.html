@@ -31,37 +31,74 @@
         </button>
         <a class="navbar-brand" href="index.html">April Steinmetz</a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
+      <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="myNavbar">
+        
               <button type="button" class="btn btn-default navbar-btn customFilter">
-                <span class="glyphicon glyphicon-equalizer"></span> discover
+                <span class="glyphicon glyphicon-stats"></span> discover
               </button>
-          </li>
-        </ul>
+              <button type="button" class="btn btn-default navbar-btn customFilter">
+                <span class="glyphicon glyphicon-fire"></span> about me
+              </button>
+              <button type="button" class="btn btn-default navbar-btn customFilter">
+                <span class="glyphicon glyphicon-calendar"></span> lets meet!
+              </button>
+         
       </div>
     </div>
   </nav>
 
   <!-- Main container for the filter area -->
+<form class="controls" id="Filters" style="display:none;">
+  <!-- We can add an unlimited number of "filter groups" using the following format: -->
   
-  <div class="controls" style="display:none;">
-    
-    
-    <label>Style:</label>
-    <button class="filter glam" data-filter=".glamour">Glamour</button>
-    <button class="filter fit" data-filter=".fitness">Fitness</button>
-    <button class="filter fash" data-filter=".fashion">Fashion</button>
-    <button class="filter ling" data-filter=".lingerie">Lingerie</button>
-    
-    <label>Release:</label>
-    <button class="sort" data-sort="myorder:asc">Oldest</button>
-    <button class="sort" data-sort="myorder:desc">Newest</button>
-    
-    <label>Reset:</label>
-    <button class="filter" data-filter="all">All</button>
-    
-  </div>  
+  <fieldset>
+    <h4>Style</h4>
+    <div class="checkbox">
+      <input type="checkbox" value=".fitness"/>
+      <label>Fitness</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".glamour"/>
+      <label>Glamour</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".fashion"/>
+      <label>Fashion</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".lingerie"/>
+      <label>Lingerie</label>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <h4>Environment</h4>
+    <div class="checkbox">
+      <input type="checkbox" value=".outdoor"/>
+      <label>Outdoor</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".indoor"/>
+      <label>Indoor</label>
+    </div>
+  </fieldset>
+  
+  <fieldset>
+    <h4>Theme</h4>
+    <div class="checkbox">
+      <input type="checkbox" value=".color"/>
+      <label>Color</label>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" value=".blanckandwhite"/>
+      <label>Black & White</label>
+    </div>
+  </fieldset>
+  
+  
+  
+  <button id="Reset" class="reset">Clear Filters</button>
+</form>
         
   <!-- Main container for the portfolio  -->
  

@@ -19,13 +19,13 @@ body{
 
 .customFilter{
   outline: none;
-  border-radius: 2;
+  border-radius: 1;
   border:none;
 }
 
 .customFilter:active{
   outline: none;
-  border-radius: 2;
+  border-radius: 1;
   border:none;
   background:#E6E6E6;
 }
@@ -35,19 +35,6 @@ body{
 }
 
 /*********** FILTER STYLES ***********/
-
-.controls{
-  text-align:center;
-  padding: 1%;
-  background: #f0f0f0; /* default was 333 
-  color: #eee       */
-  border-bottom: solid 1px #E7E7E7;
-}
-
-label{
-  font-weight: 200;
-  margin: 0 .4em 0 0;
-}
 
 button{
   display: inline-block;
@@ -61,49 +48,110 @@ button{
   cursor: pointer;
 }
 
-.glam{
-  border: solid lightgreen;
-}
-.glam.active{
-  background: lightgreen;
-  color:#666;
-}
-
-.fit{
-  border: solid #ffff94;
-}
-.fit.active{
-  background: #ffff94;
-  color:#666;
+.controls{
+  text-align:center;
+  background: #f0f0f0; /* default was 333 
+  color: #eee       */
+  border-bottom: solid 1px #E7E7E7;
 }
 
-.fash{
-  border: solid pink;
-}
-.fash.active{
-  background: pink;
-  color:#666;
+h4{
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 
-.ling{
-  border: solid lightblue;
-}
-.ling.active{
-  background: lightblue;
-  color:#666;
-}
-
-button.active{
-  background: #666;
-  color:#E6E6E6;
+fieldset{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 4em 0 0;
+  padding: 0.5em;
 }
 
-button:focus{
+.checkbox{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.checkbox input[type="checkbox"]{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox label{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 1.7em;
+}
+
+.checkbox label:before,
+.checkbox label:after{
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.checkbox label:before{
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #ddd;    /* checkboxes color */
+  border-radius: 3px;
+}
+
+.checkbox label:after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #777;    /* inside checkboxes color (when checked) */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.glam label:after{
+  background: lightgreen;    /* inside checkboxes color (when checked) */
+}
+
+.checkbox input:checked ~ label:after{
+  opacity: 1;
+}
+
+.checkbox input:focus ~ label:before{
+  background: #eee;
+}
+
+.reset{
+  display: inline-block;
+  vertical-align: top;
+  padding: .4em .8em;
+  margin-top: 1.5em;
+  border: 1;
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.reset:focus{
   outline: 0 none;
-}
-
-button + label{
-  margin-left: 1em;
 }
 
 /*********** PORTFOLIO STYLES ***********/
@@ -111,6 +159,10 @@ button + label{
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+img:hover{
+    opacity:0.7;
 }
 
 .pontainer{
@@ -167,11 +219,10 @@ img {
 
 .pontainer .mix:after{
   content: attr(data-myorder);
-  color: gray;
-  font-size: 16px;
+  font-size: 10px;
   display: inline-block;
   vertical-align: top;
-  padding: 4% 6%;
+  padding: 1% 6%;
   font-weight: 700;
 }
 
