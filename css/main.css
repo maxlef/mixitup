@@ -229,7 +229,7 @@ img:hover{
   display: none;
 }
 
-/******** Here are the border colors of the different categories ********/
+/******** Here are the border and background colors of the different categories ********/
 
 .pontainer .mix.glamour{
   /* border-top: 2px solid limegreen; */
@@ -253,6 +253,7 @@ img:hover{
 
 /* ****************************** */
 
+/*
 .pontainer .mix:after{
   content: attr(data-myorder);
   font-size: 10px;
@@ -261,6 +262,7 @@ img:hover{
   padding: 1% 6%;
   font-weight: 700;
 }
+*/
 
 .pontainer .mix:before{
   content: '';
