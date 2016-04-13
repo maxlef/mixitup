@@ -7,3 +7,9 @@ $(function(){
 	$('#Container').mixItUp();
 
 });
+
+
+$( ".customFilter" ).click(function() {
+  $( ".controls" ).slideToggle( "slow" );
+});
+

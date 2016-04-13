@@ -32,12 +32,16 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-equalizer"></span> filter</a></li>
+          <li>
+              <button type="button" class="btn btn-default navbar-btn customFilter">
+                <span class="glyphicon glyphicon-equalizer"></span> discover
+              </button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  
+
   <!-- Main container for the filter area -->
   
   <div class="controls">
@@ -47,14 +51,17 @@
     <button class="filter" data-filter=".glamour">Glamour</button>
     <button class="filter" data-filter=".fitness">Fitness</button>
     <button class="filter" data-filter=".fashion">Fashion</button>
+    <button class="filter" data-filter=".lingerie">Lingerie</button>
     
     <label>Sort:</label>
     <button class="sort" data-sort="myorder:asc">Oldest</button>
     <button class="sort" data-sort="myorder:desc">Newest</button>
     
-  </div>     
+  </div>  
+  
+
         
- <!-- Main container for the portfolio -->
+  <!-- Main container for the portfolio  -->
  
   <div id="Container" class="pontainer">
     
@@ -67,19 +74,18 @@
     <div class="mix fashion" data-myorder="7"><img src="img/fashion/fashion2.jpg"></div>
     <div class="mix fashion" data-myorder="8"><img src="img/fashion/fashion3.jpg"></div>
     <div class="mix fashion" data-myorder="9"><img src="img/fashion/fashion4.jpg"></div>
-    <div class="mix fashion" data-myorder="10"><img src="img/fashion/fashion3.jpg"></div>
-    <div class="mix fashion" data-myorder="11"><img src="img/fashion/fashion4.jpg"></div>
-    
+   
     <div class="gap"></div>
     <div class="gap"></div>
   
   </div>
-
+  
   <!-- Scripts for MixItUp -->
     
   <script src="build/jquery.mixitup.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+  <!-- <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script> -->
   <script type="text/javascript" src="bower.json"></script>
   <script type="text/javascript" src="composer.json"></script>
   <script type="text/javascript" src="Gruntfile.js"></script>
