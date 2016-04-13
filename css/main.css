@@ -64,21 +64,34 @@ button{
 .glam{
   border: solid lightgreen;
 }
+.glam.active{
+  background: lightgreen;
+}
 
 .fit{
   border: solid #ffff94;
+}
+.fit.active{
+  background: #ffff94;
 }
 
 .fash{
   border: solid pink;
 }
+.fash.active{
+  background: pink;
+}
 
 .ling{
   border: solid lightblue;
 }
+.ling.active{
+  background: lightblue;
+}
 
 button.active{
-  background: #68b8c4;
+  background: #666;
+  color:#E6E6E6;
 }
 
 button:focus{
