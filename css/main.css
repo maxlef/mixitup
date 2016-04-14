@@ -10,7 +10,7 @@ body, button{
 
 body{
     padding-top: 50px;
-    background:url("img/bg/wtlightblue.jpg") no-repeat fixed center;
+    background:url("img/bg/wtblue.jpg") fixed no-repeat;
 }
 
 /*********** NAVBAR STYLES ***********/
@@ -20,13 +20,13 @@ body{
 
 .customFilter{
   outline: none;
-  border-radius: 2;
+  border-radius: 1;
   border:none;
 }
 
 .customFilter:active{
   outline: none;
-  border-radius: 2;
+  border-radius: 1;
   border:none;
   background:#E6E6E6;
 }
@@ -155,6 +155,42 @@ fieldset{
   outline: 0 none;
 }
 
+/* Fail message styles */
+
+.container .fail-message{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  transition: 150ms;
+}
+
+.container .fail-message:before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.container .fail-message span{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container.fail .fail-message{
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /*********** PORTFOLIO STYLES ***********/
 
 img {
@@ -164,16 +200,6 @@ img {
 
 img:hover{
     opacity:0.7;
-}
-
-imgDescription{
-  visibility:hidden;
-  opacity:0;
-}
-
-.wrap:hover .imgDescription{
-  visibility: visible;
-  opacity:1;
 }
 
 .pontainer{
@@ -204,7 +230,7 @@ imgDescription{
   display: none;
 }
 
-/******** Here are the border colors of the different categories ********/
+/******** Here are the border and background colors of the different categories ********/
 
 .pontainer .mix.glamour{
   /* border-top: 2px solid limegreen; */
@@ -228,6 +254,7 @@ imgDescription{
 
 /* ****************************** */
 
+/*
 .pontainer .mix:after{
   content: attr(data-myorder);
   font-size: 10px;
@@ -236,6 +263,7 @@ imgDescription{
   padding: 1% 6%;
   font-weight: 700;
 }
+*/
 
 .pontainer .mix:before{
   content: '';
