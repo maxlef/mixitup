@@ -10,7 +10,6 @@ body, button{
 
 body{
     padding-top: 50px;
-    background:url("img/bg/wtblue.jpg") fixed no-repeat;
 }
 
 /*********** NAVBAR STYLES ***********/
@@ -51,7 +50,7 @@ button{
 
 .controls{
   text-align:center;
-  background: #f0f0f0; /* default was 333 
+  background: hsl(248, 100%, 97%); /* default was #f0f0f0 
   color: #eee       */
   border-bottom: solid 1px #E7E7E7;
 }
