@@ -174,3 +174,7 @@ $(function(){
     }
   });    
 });
+
+
+///////////// code for overlay my img //////////////
+
