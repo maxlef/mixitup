@@ -211,7 +211,7 @@ img:hover{
 }
 
 .pontainer{
-  padding: 1% 1% 0;
+  padding: 1% 0% 0% 0%;
   text-align: justify;
   font-size: 0.1px;
   /* background: #68b8c4; */
@@ -234,7 +234,7 @@ img:hover{
 .pontainer .mix{
   text-align: left;
   /* background: #03899c; */
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   display: none;
 }
 
